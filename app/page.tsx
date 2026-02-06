@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
               Roshan Pandit
               <span className="block mt-2 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-                Backend Engineer
+                Full Stack Engineer
               </span>
             </h1>
 
