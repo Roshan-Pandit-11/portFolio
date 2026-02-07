@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink, Linkedin} from 'lucide-react'
 
 export default function Home() {
   const skills = {
@@ -99,8 +99,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-xl text-neutral-400 text-lg">
-              I design scalable systems, microservices, and data-intensive
-              platforms for millions of users.
+             I build scalable full-stack applications and real-time collaboration systems with clean architecture.
             </p>
 
             <div className="mt-10 flex gap-4">
@@ -233,7 +232,7 @@ export default function Home() {
         <section id="contact" className="py-24">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-neutral-400 max-w-xl mb-8">
-            Open to backend roles, scalable systems, and system design challenges.
+            Open to Full Stack roles, scalable systems, and system design challenges.
           </p>
 
           <div className="flex gap-4">
@@ -247,16 +246,34 @@ export default function Home() {
               href="https://github.com/Roshan-Pandit-11"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border border-neutral-700 rounded-lg hover:border-indigo-400 hover:text-indigo-400 transition"
+              className="px-6 py-3 flex items-center gap-2 border border-neutral-700 rounded-lg hover:border-indigo-400 hover:text-indigo-400 transition"
             >
-              GitHub
+              <Github size={16} />
+              Github
+            </a>
+            <a
+              href="https://leetcode.com/u/RoshanPandit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 flex items-center gap-2 border border-neutral-700 rounded-lg hover:border-indigo-400 hover:text-indigo-400 transition"
+            >
+              Leetcode
+            </a>
+            <a
+              href="https://linkedin.com/in/roshan-pandit-90bb0a342"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 flex items-center gap-2 border border-neutral-700 rounded-lg hover:border-indigo-400 hover:text-indigo-400 transition"
+            >
+              <Linkedin size={16} />
+              LinkedIn
             </a>
           </div>
         </section>
       </main>
 
       <footer className="py-8 border-t border-neutral-800 text-center text-xs text-neutral-500">
-        © 2024 Roshan Pandit
+        © 2026 Roshan Pandit PortFolio
       </footer>
     </div>
   )
