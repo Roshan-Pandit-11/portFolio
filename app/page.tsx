@@ -4,11 +4,42 @@ import { Github, ExternalLink } from 'lucide-react'
 
 export default function Home() {
   const skills = {
-    'Languages & Runtime': ['Node.js', 'TypeScript', 'JavaScript', 'Go', 'Python'],
-    Databases: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch'],
-    Infrastructure: ['Docker', 'Kubernetes', 'AWS', 'Kafka'],
-    Practices: ['System Design', 'Scalability', 'Performance', 'CI/CD'],
-  }
+  'Languages & Core': [
+    'C' , 'C++' , 'Java' ,
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+  ],
+
+  'Frontend': [
+    'React',
+    'Next.js',
+    'Tailwind CSS',
+    'Figma',
+  ],
+
+  'Backend & Auth': [
+    'Node.js',
+    'Express.js',
+    'WebSockets',
+    'PostgreSQL',
+    'Prisma',
+    'Redis',
+    'NextAuth.js',
+    'JWT (jsonwebtoken)',
+    'bcrypt',
+    'Zod',
+  ],
+
+  'Full-Stack & DevOps': [
+    'MERN Stack',
+    'REST APIs',
+    'Real-time Applications',
+    'Docker',
+  ],
+};
+
 
   const projects = [
     {
@@ -102,7 +133,7 @@ export default function Home() {
         {/* Skills */}
         <section id="skills" className="py-24 border-b border-neutral-800">
           <h2 className="text-3xl font-bold mb-12">Skills</h2>
-          <div className="grid sm:grid-cols-2 gap-10">
+          <div className="grid sm:grid-cols-2 gap-12">
             {Object.entries(skills).map(([title, list]) => (
               <div key={title}>
                 <h3 className="text-sm uppercase tracking-wide text-neutral-400 mb-4">
