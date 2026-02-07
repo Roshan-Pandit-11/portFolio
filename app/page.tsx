@@ -63,12 +63,12 @@ export default function Home() {
             <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
               Roshan Pandit
               <span className="block mt-2 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-                Full Stack Engineer
+                Full Stack Developer
               </span>
             </h1>
 
             <p className="mt-6 max-w-xl text-neutral-400 text-lg">
-              I design scalable backend systems, microservices, and data-intensive
+              I design scalable systems, microservices, and data-intensive
               platforms for millions of users.
             </p>
 
@@ -207,13 +207,13 @@ export default function Home() {
 
           <div className="flex gap-4">
             <a
-              href="mailto:roshan@example.com"
+              href="mailto:roshanpandit1124@gmail.com"
               className="px-6 py-3 bg-white text-black rounded-lg hover:bg-neutral-200 transition"
             >
               Email
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Roshan-Pandit-11"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border border-neutral-700 rounded-lg hover:border-indigo-400 hover:text-indigo-400 transition"
