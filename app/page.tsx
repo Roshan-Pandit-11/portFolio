@@ -474,7 +474,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="p-6 rounded-2xl border-2 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group  bg-[#0F122980] text-[#0850cb] border-[#242d4a]"
                   >
-                    <div size={24} className="font-bold text-lg">LC</div>
+                    <div className='font-semibold'>LC</div>
                     <span className="text-sm font-semibold group-hover:text-[#0850cb] transition-colors text-[#ffffff]">
                       LeetCode
                     </span>
