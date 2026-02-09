@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, ExternalLink, ArrowRight , Linkedin} from 'lucide-react'
+import { Github, ExternalLink, ArrowRight , Linkedin , Mail} from 'lucide-react'
 import razorpayImage from "./images/razorpay-image.png" ;
 import secondBrain_image from "./images/second-brain.png"
 import minipayImage from "./images/minipay.png"
@@ -484,7 +484,7 @@ export default function Home() {
                     href="mailto:roshanpandit1124@gmail.com"
                     className="p-6 rounded-2xl border-2 flex flex-col items-center gap-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group border-[#0750cd] bg-[#232944]"
                   >
-                    <div className="w-6 h-6 flex items-center text-[#ffffff]  justify-center">✉</div>
+                    <div className="w-6 h-6 flex items-center text-[#ffffff]  justify-center"><Mail size={24}/></div>
                     <span className="text-sm font-semibold group-hover:text-white transition-colors text-[#0850cb]">
                       Email
                     </span>
