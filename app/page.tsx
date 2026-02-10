@@ -7,6 +7,7 @@ import minipayImage from "./images/minipay.png"
 import playfyImage from "./images/playfy.png"
 
 export default function Home() {
+  
   const skills = {
   'Languages & Core': [
     'C' , 'C++' , 'Java' ,
@@ -43,7 +44,6 @@ export default function Home() {
     'Docker',
   ],
 };
-
 
   const projects = [
     {
@@ -85,7 +85,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#090b11] text-neutral-100">
+    <div className="min-h-screen bg-[#0d1117] text-neutral-100">
       {/* Navbar */}
       <nav className=" backdrop-blur-md sticky top-0 z-50 border-b border-[#242d4a] ">
         <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
@@ -96,9 +96,9 @@ export default function Home() {
             </span>
           </div>
           <div className="flex gap-6 text-sm tracking-wide">
-            <a href="#skills" className="hover:text-[#0047c2] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Skills</a>
-            <a href="#projects" className="hover:text-[#0047c2] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Projects</a>
-            <a href="#contact" className="hover:text-[#0047c2] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Contact</a>
+            <a href="#skills" className="hover:text-[#3b83ff] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Skills</a>
+            <a href="#projects" className="hover:text-[#3b83ff] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Projects</a>
+            <a href="#contact" className="hover:text-[#3b83ff] transition duration-300 rounded-2xl p-2 hover:bg-[#282f43]">Contact</a>
           </div>
         </div>
       </nav>
