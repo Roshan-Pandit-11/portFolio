@@ -4,7 +4,7 @@ import { Github, ExternalLink, ArrowRight , Linkedin , Mail} from 'lucide-react'
 import razorpayImage from "./images/razorpay-image.png" ;
 import secondBrain_image from "./images/second-brain.png"
 import minipayImage from "./images/minipay.png"
-import playfyImage from "./images/playfy.png"
+import playfy_ss_portfolio from "./images/playfy_ss_portfolio.png" ;
 
 export default function Home() {
   
@@ -27,6 +27,7 @@ export default function Home() {
   'Backend & Auth': [
     'Node.js',
     'Express.js',
+    'MongoDB' ,
     'WebSockets',
     'PostgreSQL',
     'Prisma',
@@ -51,8 +52,8 @@ export default function Home() {
       description:
         'Playfy is a full-stack application that enables users to create rooms and share songs with real-time collaboration and seamless playback.',
       tech: ['Next.js', 'TypeScript' , 'PostgreSQL', 'Prisma', 'ws' , 'Tailwind' , 'react-player' , 'bcryptjs' , 'zod' , 'jwt'],
-      image: playfyImage,
-      demo: 'https://github.com/Roshan-Pandit-11/playfy' ,
+      image: playfy_ss_portfolio,
+      demo: null ,
       github: 'https://github.com/Roshan-Pandit-11/playfy',
     },
     {
@@ -141,7 +142,7 @@ export default function Home() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-4">
                 <div className="space-y-2">
-                  <p className="text-2xl font-bold text-[#083687]">5+</p>
+                  <p className="text-2xl font-bold text-[#083687]">4+</p>
                   <p className="text-sm text-[#7a7a8e]">Projects Built</p>
                 </div>
                 <div className="space-y-2">
@@ -200,7 +201,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/40 pointer-events-none"></div>
                   
                   <img
-                   src={playfyImage.src}
+                   src={playfy_ss_portfolio.src}
                     alt="Roshan Pandit"
                     className="w-full h-full object-cover"
                   />
@@ -262,15 +263,15 @@ export default function Home() {
             </div>
 
             {/* Stats Footer */}
-            <div className="grid md:grid-cols-3 gap-6 mt-20 pt-16 border-t border-[#242d4a]">
+            <div className="grid md:grid-cols-2 gap-6 mt-20 pt-16 border-t border-[#242d4a]">
               <div className="text-center">
                 <p className="text-4xl font-bold mb-2 text-[#083687]">20+</p>
                 <p className="text-sm uppercase tracking-widest text-[#7a7a8e]">Technologies</p>
               </div>
-              <div className="text-center">
-                <p className="text-4xl font-bold mb-2 text-[#083687]">5+</p>
-                <p className="text-sm uppercase tracking-widest text-[#7a7a8e]">Years Ready</p>
-              </div>
+              {/* <div className="text-center">
+                <p className="text-4xl font-bold mb-2 text-[#083687]">0</p>
+                <p className="text-sm uppercase tracking-widest text-[#7a7a8e]">Fresher</p>
+              </div> */}
               <div className="text-center">
                 <p className="text-4xl font-bold mb-2 text-[#083687]">Full Stack</p>
                 <p className="text-sm uppercase tracking-widest text-[#7a7a8e]">Capable</p>
