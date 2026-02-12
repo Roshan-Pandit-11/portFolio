@@ -5,8 +5,28 @@ import razorpayImage from "./images/razorpay-image.png" ;
 import secondBrain_image from "./images/second-brain.png"
 import minipayImage from "./images/minipay.png"
 import playfy_ss_portfolio from "./images/playfy_ss_portfolio.png" ;
+import profile_pic from "./images/profile_pic.jpg" ;
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Home() {
+
+  const [count, setCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    const updateCounter = async () => {
+      try {
+        const res = await axios.get(
+          "/api/count"
+        );
+        setCount(res.data.count) ;
+      } catch (error) {
+        console.error("Counter error:", error);
+      }
+    };
+
+    updateCounter();
+  }, []);
   
   const skills = {
   'Languages & Core': [
@@ -200,8 +220,8 @@ export default function Home() {
                   {/* Image Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/40 pointer-events-none"></div>
                   
-                  <img
-                   src={playfy_ss_portfolio.src}
+                  <img 
+                   src={profile_pic.src}
                     alt="Roshan Pandit"
                     className="w-full h-full object-cover"
                   />
@@ -402,7 +422,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" className="relative py-32 overflow-hidden">
+        <section id="contact" className="relative pt-32 pb-24 overflow-hidden">
           <div className="relative z-10 max-w-7xl mx-auto px-6">
             {/* Main Contact Card */}
             <div className="max-w-3xl">
@@ -509,7 +529,8 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t py-16 text-center border-[#242d4a]">
+      <footer className="border-t pt-8 pb-16 text-center border-[#242d4a]">
+        {count && <div className="text-center pb-8 text-xl font-semibold font-mono">You are the <span className='text-pink-600 animate-pulse'>{count}</span>th Visitor.</div>}
         <div className="max-w-7xl mx-auto px-6 space-y-6">
           {/* Divider Line */}
           <div className="flex items-center justify-center gap-4">
