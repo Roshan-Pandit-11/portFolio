@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import portfolio_image from "./images/roshan_portfolio.png" ;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +22,7 @@ export const metadata = {
     siteName: "Roshan Pandit Portfolio",
     images: [
       {
-        url: {portfolio_image},
+        url: "./images/roshan_portfolio.png",
         width: 1200,
         height: 630,
       },
