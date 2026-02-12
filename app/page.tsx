@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, ExternalLink, ArrowRight , Linkedin , Mail} from 'lucide-react'
+import { Github, ExternalLink, ArrowRight , Linkedin , Mail , Heart} from 'lucide-react'
 import razorpayImage from "./images/razorpay-image.png" ;
 import secondBrain_image from "./images/second-brain.png"
 import minipayImage from "./images/minipay.png"
@@ -11,22 +11,6 @@ import axios from 'axios';
 
 export default function Home() {
 
-  const [count, setCount] = useState<number | null>(null);
-
-  useEffect(() => {
-    const updateCounter = async () => {
-      try {
-        const res = await axios.get(
-          "/api/count"
-        );
-        setCount(res.data.count) ;
-      } catch (error) {
-        console.error("Counter error:", error);
-      }
-    };
-
-    updateCounter();
-  }, []);
   
   const skills = {
   'Languages & Core': [
@@ -530,7 +514,12 @@ export default function Home() {
       </main>
 
       <footer className="border-t pt-8 pb-16 text-center border-[#242d4a]">
-        {count && <div className="text-center pb-8 text-xl font-semibold font-mono">You are the <span className='text-pink-600 animate-pulse'>{count}</span>th Visitor.</div>}
+        <div className="text-center pb-8 text-xl font-semibold font-mono">
+         <span className="bg-gradient-to-r from-pink-300 to-orange-700 bg-clip-text text-transparent inline-flex items-center ">
+          Thanks For Visiting.
+          <Heart className="w-5 h-5 text-red-500" />
+        </span>
+        </div>
         <div className="max-w-7xl mx-auto px-6 space-y-6">
           {/* Divider Line */}
           <div className="flex items-center justify-center gap-4">
