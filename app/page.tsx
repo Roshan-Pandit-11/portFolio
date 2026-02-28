@@ -6,6 +6,7 @@ import secondBrain_image from "./images/second-brain.png"
 import minipayImage from "./images/minipay.png"
 import playfy_ss_portfolio from "./images/playfy_ss_portfolio.png" ;
 import profile_pic from "./images/profile_pic.jpg" ;
+import sketchFlow_img from "./images/sketchflow-ss-1.png" ;
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -52,6 +53,15 @@ export default function Home() {
 
   const projects = [
     {
+      name: 'SketchFlow',
+      description:
+        'SketchFlow is a collaborative, real-time, infinite canvas drawing platform built to enable seamless visual communication across users.',
+      tech: ['Next.js', 'NextAuth' , 'TypeScript' , 'PostgreSQL', 'Prisma', 'ws' , 'Tailwind' , 'Redis' , 'bcryptjs' , 'zod'],
+      image: sketchFlow_img,
+      demo: null,
+      github: null,
+    },
+    {
       name: 'PlayFy',
       description:
         'Playfy is a full-stack application that enables users to create rooms and share songs with real-time collaboration and seamless playback.',
@@ -59,15 +69,6 @@ export default function Home() {
       image: playfy_ss_portfolio,
       demo: null ,
       github: 'https://github.com/Roshan-Pandit-11/playfy',
-    },
-    {
-      name: 'MiniPay',
-      description:
-        'Minipay is a responsive digital payment platform that allows users to authenticate securely, track balances, and perform instant peer-to-peer transactions through an intuitive dashboard.',
-      tech: ['React', 'TypeScript', 'react-dom' , 'Tailwind' , 'express' , 'bcrypt' , 'cors' , 'jwt' , 'mongoDB' , 'zod'],
-      image: minipayImage,
-      demo: null,
-      github: 'https://github.com/Roshan-Pandit-11/minipay',
     },
     {
       name: 'Second Brain',
@@ -375,7 +376,7 @@ export default function Home() {
                           Demo
                         </a>
                       )}
-                      <a
+                      {project.github && <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -383,7 +384,7 @@ export default function Home() {
                       >
                         <Github size={14} />
                         Code
-                      </a>
+                      </a>}
                     </div>
                   </div>
                 </div>
