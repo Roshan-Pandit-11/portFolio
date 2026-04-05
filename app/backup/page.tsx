@@ -1,11 +1,11 @@
 'use client'
 
 import { Github, ExternalLink, ArrowRight , Linkedin , Mail , Heart} from 'lucide-react'
-import razorpayImage from "./images/razorpay-image.png" ;
-import secondBrain_image from "./images/second-brain.png"
-import playfy_ss_portfolio from "./images/playfy_ss_portfolio.png" ;
-import profile_pic from "./images/profile_pic.jpg" ;
-import sketchFlow_img from "./images/sketchflow-ss-1.png" ;
+import razorpayImage from "../images/razorpay-image.png" ;
+import secondBrain_image from "../images/second-brain.png"
+import playfy_ss_portfolio from "../images/playfy_ss_portfolio.png" ;
+import profile_pic from "../images/profile_pic.jpg" ;
+import sketchFlow_img from "../images/sketchflow-ss-1.png" ;
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -334,8 +334,8 @@ export default function Home() {
 
         {/* Skills */}
         <section id="skills" className="py-24 border-b" style={{ borderColor: '#0850CB' }}>
-  <h2 className="text-6xl font-bold font-serif mb-12 text-[#6eafff]">
-    Skills & Expertise
+  <h2 className="text-5xl font-bold font-serif mb-12 text-[#2d73ffcd]">
+    Skills
   </h2>
 
   <div className="grid sm:grid-cols-2 gap-12">
@@ -372,8 +372,7 @@ export default function Home() {
 
         {/* Projects */}
         <section id="projects" className="py-24 border-b border-[#393939]">
-          <h2 className="text-6xl font-bold font-serif text-[#6eafff]">Featured Projects</h2>
-          <p className='mb-12 mt-2'>A selection of full-stack applications and collaborative systems designed to solve real-world problems.</p>
+          <h2 className="text-5xl font-bold font-serif mb-12 text-[#2d73ffcd]">Projects</h2>
 
           <div className="space-y-24">
             {projects.map((project, index) => {
