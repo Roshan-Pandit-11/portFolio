@@ -246,8 +246,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-8">
         <a
           href="#projects"
-          className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-2xl"
-          style={{ backgroundColor: '#0751CF', color: '#BBE1FA' }}
+          className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 border-[#0751CF] bg-[#0751CF] text-[#FFFFFF] transition-all duration-300 hover:bg-white hover:text-[#0751CF]"
         >
           <span>Explore My Work</span>
           <ArrowRight size={16} className="sm:group-hover:translate-x-1 transition-transform" />
@@ -255,12 +254,7 @@ export default function Home() {
 
         <a
           href="#contact"
-          className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all duration-300"
-          style={{
-            borderColor: '#0751CF',
-            color: '#0751CF',
-            backgroundColor: 'rgba(7, 81, 207, 0.05)',
-          }}
+          className="w-full sm:w-auto text-center px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 border-[#0751CF] text-[#0751CF] bg-white hover:text-white hover:bg-blue-500 transition-all duration-200"
         >
           Get In Touch
         </a>
