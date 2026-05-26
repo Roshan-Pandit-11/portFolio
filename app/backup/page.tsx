@@ -936,7 +936,7 @@ export default function Home() {
                     uppercase
                     leading-[0.95]
                     tracking-[-0.04em]
-                    text-white
+                    text-cyan-300
                     sm:text-3xl
                     md:text-4xl
                   "
@@ -1032,7 +1032,7 @@ export default function Home() {
                       <div className="absolute inset-0 translate-y-full bg-white/10 transition duration-500 group-hover/btn:translate-y-0" />
 
                       <span className="relative z-10 flex items-center gap-2">
-                        <ExternalLink size={14} />
+                        <ExternalLink size={14} className='text-white' />
                         Live Demo
                       </span>
 
@@ -1058,7 +1058,7 @@ export default function Home() {
                         font-bold
                         uppercase
                         tracking-[0.18em]
-                        text-white/70
+                        text-blue-400
                         transition-all
                         duration-300
                         hover:border-blue-500/30
@@ -1066,7 +1066,7 @@ export default function Home() {
                         hover:text-white
                       "
                     >
-                      <Github size={14} />
+                      <Github size={14} className='text-white' />
                       Source Code
                     </a>
                   )}
