@@ -61,7 +61,7 @@ const PROFILE = {
   initials: 'RP',
   title: 'Software Engineer — Backend & Distributed Systems',
   location: 'New Delhi, India',
-  photoSrc: '/images/profile_pic.jpg', // REPLACE ME — put your photo in /public/profile.jpg
+  photoSrc: '../images/profile_pic.jpg', // REPLACE ME — put your photo in /public/profile.jpg
   headline: 'Full-Stack Developer • Distributed Systems',
   bio:
     "I build scalable web applications and real-time collaborative systems with a focus on backend architecture, performance, and clean code. I enjoy turning complex ideas into production-ready software.",
@@ -165,9 +165,9 @@ const PROJECTS = [
     description:
       'A real-time multiplayer chess platform built with a microservices architecture. Supports live gameplay, secure authentication, matchmaking, and synchronized game state with low-latency communication.',
     tags: ['TypeScript', 'Next.js', 'TurboRepo', 'WebSockets', 'Redis', 'Prisma', 'PostgreSQL', 'OAuth'],
-    image: '/images/chess.png',
-    github: 'https://github.com/Roshan-Pandit-11/chess', // REPLACE ME
-    live: '', // REPLACE ME
+    image: '/projects/chess.jpg',
+    github: 'https://github.com/your-username/chess', // REPLACE ME
+    live: 'https://your-chess-app.vercel.app', // REPLACE ME
     highlight: 'Real-time chess with scalable backend services',
   },
   {
@@ -176,9 +176,9 @@ const PROJECTS = [
     description:
       'A collaborative real-time infinite canvas application that enables multiple users to draw, edit, and interact simultaneously. Built with low-latency WebSocket communication, secure authentication, and persistent canvas storage for a seamless collaborative experience.',
     tags: ['Next.js', 'TypeScript', 'NextAuth', 'WebSockets', 'Redis', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Zod'],
-    image: '/images/sketchflow-ss-1.png',
-    github: '', // REPLACE ME
-    live: '', // REPLACE ME
+    image: '/projects/sketchflow.jpg',
+    github: 'https://github.com/your-username/sketchflow', // REPLACE ME
+    live: 'https://your-sketchflow.vercel.app', // REPLACE ME
     highlight: 'Redis-backed real-time canvas synchronization',
   },
   {
@@ -187,9 +187,9 @@ const PROJECTS = [
     description:
       'A full-stack collaborative music streaming platform where users can create shared rooms, queue songs, and enjoy synchronized playback in real time. Built with secure authentication, WebSockets, and persistent room management.',
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'WebSockets', 'React Player', 'JWT', 'Tailwind CSS', 'Zod', 'bcryptjs'],
-    image: '/images/playfy_ss_portfolio.png',
-    github: 'https://github.com/Roshan-Pandit-11/playfy', // REPLACE ME
-    live: '', // REPLACE ME
+    image: '/projects/playfy.jpg',
+    github: 'https://github.com/your-username/playfy', // REPLACE ME
+    live: 'https://your-playfy.vercel.app', // REPLACE ME
     highlight: 'Real-time collaborative music streaming platform',
   },
   {
@@ -198,9 +198,9 @@ const PROJECTS = [
     description:
       'A full-stack knowledge management platform that enables users to save, organize, and search content from multiple sources, including YouTube, Twitter, and LinkedIn. Features secure authentication and a centralized dashboard for efficient knowledge retrieval.',
     tags: ['React', 'TypeScript', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS', 'Node.js', 'CORS'],
-    image: '/images/second-brain.png',
-    github: 'https://github.com/Roshan-Pandit-11/second-brain', // REPLACE ME
-    live: '', // REPLACE ME
+    image: '/projects/second-brain.jpg',
+    github: 'https://github.com/your-username/second-brain', // REPLACE ME
+    live: 'https://your-secondbrain.vercel.app', // REPLACE ME
     highlight: 'Centralized knowledge management across multiple platforms',
   },
 ];
@@ -763,7 +763,7 @@ export default function Page() {
                             e.currentTarget.style.boxShadow = 'none';
                           }}
                         >
-                          <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-5">
+                          <div className="flex flex-col sm:flex-row gap-5">
                             <ProjectImage src={p.image} alt={`${p.title} preview`} numeral={p.numeral} />
 
                             <div className="relative flex-1 py-1 sm:py-2 pr-1 min-w-0">
@@ -812,7 +812,7 @@ export default function Page() {
                                     <Github size={16} />
                                     View code
                                   </a>
-                                  {p.live && <a
+                                  <a
                                     href={p.live}
                                     target="_blank"
                                     rel="noreferrer"
@@ -821,7 +821,7 @@ export default function Page() {
                                   >
                                     Live demo
                                     <ArrowUpRight size={16} />
-                                  </a>}
+                                  </a>
                                 </div>
                               </div>
                             </div>
